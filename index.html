@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+    #button1{
+      background-color: rgb(172, 170, 169)
+    }
+    #button1:hover{
+      background-color:rgb(125, 166, 167) ;
+    }
+    .container{
+      border: 2px solid black;
+     margin-top: 60px;
+     margin-left: 500px ; 
+     margin-top: 150px;
+     padding: 10px;
+     width: 130px;
+     border-radius: 7px;
+     background-color: rgb(113, 239, 119);
+     font-weight:bolder;
+     transform: scale(2); /* Increase the code size to 200% */
+    }
+    #display{
+      width: 110px;
+      background-color: rgb(199, 150, 36);
+    }
+    .subcontainer{
+      margin-left: 2px;
+      width: 120px;
+      margin-top: -8px;
+    }
+    #clear{
+      background-color: rgb(243, 119, 119);
+      color: rgb(67, 67, 67);
+    }
+    .name{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 100;
+      margin-top: 2px;
+      margin-bottom: 3px;
+      font-style: oblique;
+    }
+    .allbut{
+      border-radius: 6px;
+    }
+    @media (max-width:640px) {
+      .container{
+            margin-left: 30% ; 
+            margin-right: 500px ; 
+            margin-top: 40%;
+
+      }
+    }
+    @media (max-width:500px) {
+     .container{
+      margin-left: 30% ; 
+      margin-right: 500px ; 
+      margin-top: 60%;
+
+     }
+    }
+    @media (max-width : 390px) {
+      .container{
+      margin-left: 25% ; 
+      margin-right: 600px ; 
+      margin-top: 90%;
+
+     }
+    }
+      </style>
+</head>
+<body>
+      <div class="container">
+            <h1 class="name">CASIO</h1>
+      <div>
+            <input readonly type="text" id="display">
+      </div>
+      <br>
+      <div class="subcontainer">
+            <button class="allbut" id="clear" onclick="clr()">clear all</button>
+            <button class="allbut" id="clear" onclick="clr1()">clear </button>
+            <br>
+      <span>
+            <button class="allbut" id="button1" onclick="maaki(9)">9</button>
+            <button class="allbut"  id="button1" onclick="maaki(8)">8</button>
+            <button class="allbut" id="button1" onclick="maaki(7)">7</button>
+            <button class="allbut" id="button1" onclick="maaki('+')">+</button>
+      </span>
+      <br>
+      <span>
+            <button class="allbut" id="button1" onclick="maaki(6)">6</button>
+            <button class="allbut" id="button1" onclick="maaki(5)">5</button>
+            <button class="allbut" id="button1" onclick="maaki(4)">4</button>
+            <button class="allbut" id="button1" onclick="maaki('-')">-</button>
+      </span>
+      <br>
+      <span>
+            <button class="allbut" id="button1" onclick="maaki(3)">3</button>
+            <button class="allbut" id="button1" onclick="maaki(2)">2</button>
+            <button class="allbut" id="button1"onclick="maaki(1)">1</button>
+            <button id="button1" onclick="maaki('/')">/</button>
+      </span>
+      <br>
+      <span>
+            <button class="allbut" id="button1" onclick="maaki(0)">0</button>
+            <button class="allbut" id="button1" onclick="maaki('*')">x</button>
+            <button class="allbut" id="button1" onclick="maaki('%')">%</button>
+            <button class="allbut" id="button1" onclick="eq()">=</button>
+      </span>
+</div>
+
+</div>
+
+      <script src="app.js">
+
+      </script>
+</body>
+</html>
